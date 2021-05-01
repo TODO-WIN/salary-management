@@ -97,6 +97,31 @@ li a:hover {
   padding: 0%;
 
 }
+.aboutUs {
+  background-color: lightblue;
+  width: 75%;
+  height: 120px;
+  overflow: auto;
+margin-left: auto;
+margin-right: auto;
+}
+.savingMoney{
+background-color: rgb(223, 201, 106);
+width: 75%;
+height: 120px;
+overflow: auto;
+margin-left: auto;
+margin-right: auto;
+}
+.whySave{
+background-color: rgb(173, 230, 206);
+width: 75%;
+height: 120px;
+overflow: auto;
+margin-left: auto;
+margin-right: auto; 
+}
+
 
 /* 
 header {

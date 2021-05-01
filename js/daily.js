@@ -11,8 +11,6 @@ const submit = document.getElementById('submit');
 const tbody = document.getElementById('tbody');
 
 
-
-
 function addBalance(event) {
     event.preventDefault();
     let inputBalance = parseInt(document.getElementById('salary').value);
@@ -51,8 +49,10 @@ function addExpenses(event) {
     event.preventDefault();
     let type = document.getElementById('type').value;
     let amount = parseInt(document.getElementById('amount').value);
+    let date = document.getElementById('date').value;
+    let time = document.getElementById('time').value;
     //console.log(type, amount);
-    new Salary(type, amount);
+    new Salary(type, amount,time,date);
     localStorage.setItem('salaryAll', JSON.stringify(Salary.all));
     tableRender();
     expenses += amount;
@@ -64,6 +64,7 @@ function addExpenses(event) {
 }
 
 function tableRender() {
+    let date = new Date();
     tbody.innerHTML = '';
     let data = JSON.parse(localStorage.getItem('salaryAll'));
     if (data) {
@@ -77,7 +78,13 @@ function tableRender() {
             const td2 = document.createElement('td');
             tRow.appendChild(td2);
             td2.textContent = data[i].amount;
-            //console.log(data[i].amount);
+            const tdDate = document.createElement('td');
+            tRow.appendChild(tdDate);
+            tdDate.textContent = data[i].date;
+            const tdTime = document.createElement('td');
+            tRow.appendChild(tdTime);
+            tdTime.textContent = data[i].time;
+
         }
     }
 }

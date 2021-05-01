@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 body {
 width: 100%;
@@ -7,34 +9,114 @@ height: 100%;
 margin-left:auto ;
 margin-right: auto;
 text-align: center;
-background-image: url("backgraundhome3.jpg");
+background-image: url("");
+position: absolute;
 background-size:100% ;
+background-repeat: no-repeat;
+background-attachment: fixed;
 background-position:center ;
 display: grid;
-grid-template-rows: 100px 3fr 100px;
+
 
 }
 
+.headSection {
+  display: grid;
+  grid-template-columns: 80px 300px 1fr ;
+  background-color: #64c251;
+  padding: 20px;
+  height: 80px;
+  padding: 0%;
+  opacity: 0.3;
+  
+}
 
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-left: 0%;
+  padding-bottom: 50px;
+
+margin-top: 0%;
+padding-bottom: 40px;
+}
+
+.projectName {
+  font-size: 19px;
+  padding-top: 0px;
+  margin-right: 50px;
+  font-family: 'Josefin Sans', sans-serif; text-align:left;
+ color: white;
+ margin-top: 40px;
+} 
+
+.nav {
+padding-top: 20px;
+line-height: 15px;
+text-decoration: none;
+font-size: 18px; 
+line-height: 25px;
+border-radius: 4px;
+font-weight: bold;
+text-align: right;
+margin-left:auto;
+margin-right: 80 px;
+
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  text-align:left;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  font-family: 'New Tegomin', serif;
+  text-decoration: none;
+  color: white;
+
+
+}
+
+li a:hover {
+  background-color: rgb(143, 135, 135);
+}
+
+.hero {
+  width: 100%;
+  height: 600px;
+  padding: 0%;
+
+}
+
+/* 
 header {
     display: grid;
     grid-template-columns: 50px 2fr 1fr;
     gap: 20px;
     padding: 20px;
     background-color: #ffdf6b;
-}
-
+} */
+/* 
 header img {
     width: 70px;
     height: 70px;
     border-radius: 50px;
     padding-top: 0px;
     float: left;
-    
+     */
 
 
-}
-
+/* 
  header nav {
 
 margin-left: auto;
@@ -48,38 +130,17 @@ text-align: center;
   line-height: 25px;
   border-radius: 4px;
   font-weight: bold;
+   */
   
-  
-  
+/*   
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    overflow: hidden;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    padding: 8px;
-    color: black;
-    font-family: 'New Tegomin', serif;
-    text-decoration: none;
 
-  }
-
-  li a:hover {
-    background-color: rgb(194, 186, 186);
-  }
   
 
 header h1 {
     float: right;
-    font-family: 'Lobster', cursive;
+  
 }
 
 section.sec1 {
@@ -166,4 +227,4 @@ form {
 
   footer {
     background-color: #ffdf6b;
-}
+} */

@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+width: 100%;
+height: 100%;
+margin-left:auto ;
+margin-right: auto;
+text-align: center;
+background-image: url("backgraundhome3.jpg");
+background-size:100% ;
+background-position:center ;
+display: grid;
+grid-template-rows: 100px 3fr 100px;
+
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 50px 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffdf6b;
+}
+
+header img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    padding-top: 0px;
+    float: left;
+    
+
+
+}
+
+ header nav {
+
+margin-left: auto;
+margin-right: auto;
+padding-left: 400px;
+padding-top: 5px;
+line-height: 15px;
+text-align: center;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  font-weight: bold;
+  
+  
+  
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    padding: 8px;
+    color: black;
+    font-family: 'New Tegomin', serif;
+    text-decoration: none;
+
+  }
+
+  li a:hover {
+    background-color: rgb(194, 186, 186);
+  }
+  
+
+header h1 {
+    float: right;
+    font-family: 'Lobster', cursive;
+}
+
+section.sec1 {
+    display: grid;
+    grid-template-columns:  1fr  1fr 1fr 1fr  ;
+    gap: 20px;
+    padding: 20px;
+
+}
+section.sec2 {
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr 1fr ;
+    gap: 20px;
+    padding: 20px;
+
+}
+img {
+width: 200px;
+height: 150px;
+border-radius: 45%;
+
+
+
+}
+
+.d1 {
+    width: 100px;
+    height: 100px;
+    padding-top: 30px;
+
+}
+.a1 {
+    width: 100px;
+    height: 100px;
+    padding-top: 30px;
+
+}
+
+
+
+
+
+form {
+    margin: auto;
+    width: 50%;
+    font-family: 'New Tegomin', serif;
+    background-image: url("form.jpg");
+    color: white;
+    border-radius: 20px;
+}
+  
+  
+  input[type=number],
+  select {
+    height: 1.75em;
+    width: 100%;
+  }
+  
+  input[type=submit] {
+    float: right;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 1em;
+  }
+  
+  label span {
+    display: block;
+    padding-bottom: .25em;
+  }
+
+  .button {
+    background-color: rgb(110, 100, 6);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  footer {
+    background-color: #ffdf6b;
+}

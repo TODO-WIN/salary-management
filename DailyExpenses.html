@@ -13,48 +13,49 @@
 
 <body>
     <header>
-        <section class="logo">
-            <img src="./img/logo.jpg" alt="">
+        <section class="headSection">
+            <img class="logo" src="https://cdn3.iconfinder.com/data/icons/money-25/192/2-512.png" alt="">
+            <h1 class="projectName" >Salary Management</h1>
+            <section class="nav">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="DailyExpenses.html">Daily Expenses</a></li>
+                        <li><a href="MonthlyExpenses.html">Monthly Expenses</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </section>
         </section>
-        <section class="nav">
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="DailyExpenses.html">Daily Expenses</a></li>
-                    <li><a href="MonthlyExpenses.html">Monthly Expenses</a></li>
-                    <li><a href="AboutUs.html">About Us</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section class="projectName">
-            <h1>Salary Management</h1>
-        </section>
-
     </header>
     <main>
         <section>
-            <div id="card" style="background: burlywood;">
+            <div id="card">
 
             </div>
         </section>
-        <section>
-            <div>
-                <form id='add'>
-                    <label for="salary">Add salary</label><br>
-                    <input type="text" id="salary" name="salary"><br>
-                    <button id="addSalary">+</button>
-                </form>
-            </div>
+        
+
+            
         </section>
         <section>
             <form action="">
                 <legend>Table Of Expenses</legend>
                 <fieldset>
+
+                    <section>
+                        <div>
+                            <form id='add'>
+                                <label for="salary">Add salary</label><br>
+                                <input type="text" id="salary" name="salary" placeholder="Add Salary.."><br>
+                                <button class="button" id="addSalary">Add Salary</button>
+                            </form>
+                        </div>
                     <label for="">Type of expense</label>
-                    <input type="text" id='type'>
+                    <input type="text" id='type' placeholder="Typ of expense..">
                     <br>
                     <label for="">Amount</label>
-                    <input type="number" id='amount'>
+                    <input type="number" id='amount' placeholder="Amount..">
                     <br>
                     <label for="">Time</label>
                     <input type="time" id='time'>
@@ -66,7 +67,7 @@
                 </fieldset>
             </form>
         </section>
-        <table style="border: 2px solid black; background: burlywood;">
+        <table class="tabelDaily">
             <tr>
                 <th>Type of expense</th>
                 <th>Amount</th>

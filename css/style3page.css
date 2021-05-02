@@ -1,7 +1,9 @@
+
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 body {
 width: 100%;
@@ -9,14 +11,14 @@ height: 100%;
 margin-left:auto ;
 margin-right: auto;
 text-align: center;
-background-image: url("");
+background-image: url("../img/");
 position: absolute;
 background-size:100% ;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position:center ;
 display: grid;
-background-color: rgb(245, 213, 110);
+background-color: rgba(243, 220, 146, 0.856);
 opacity: 2;
 
 
@@ -25,12 +27,11 @@ opacity: 2;
 .headSection {
   display: grid;
   grid-template-columns: 80px 300px 800px ;
-  background-color: #64c251;
+  background-image: linear-gradient(to top, #5a8a55, #2c5029);
   padding: 20px;
   height: 80px;
   padding: 0%;
-  opacity: 2;
-  
+  position: sticky;
   
 }
 
@@ -42,10 +43,11 @@ opacity: 2;
 
 margin-top: 0%;
 padding-bottom: 40px;
+margin-left: 10px;
 }
 
 .projectName {
-  font-size: 19px;
+  font-size: 17px;
   padding-top: 0px;
   margin-right: 50px;
   font-family: 'Josefin Sans', sans-serif; text-align:left;
@@ -57,19 +59,28 @@ padding-bottom: 40px;
 padding-top: 10px;
 line-height: 15px;
 text-decoration: none;
-font-size: 18px; 
+font-size: 20px; 
 line-height: 25px;
 border-radius: 4px;
 font-weight: bold;
 text-align:center;
 height: 60px;
 width: 600px;
-margin-left: 500px;
+margin-left: 700px;
 align-items:center;
+font-family: 'Roboto Condensed', sans-serif;
+}
 
+.nav11{
+  width: 100%;
+  height: 8px;
+  background-color: #e2ba4b8e;
+}
 
-
-
+.nav22{
+  width: 100%;
+  height: 8px;
+  background-color: #e2ba4bb7;
 }
 
 ul {
@@ -86,8 +97,7 @@ li {
 li a {
   display: block;
   padding: 8px;
-  font-family: 'New Tegomin', serif;
-  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;  text-decoration: none;
   color: white;
 
 
@@ -99,10 +109,108 @@ li a:hover {
 
 .hero {
   width: 100%;
-  height: 600px;
+  height: 550px;
   padding: 0%;
   background-color: wheat;
+  padding-top: 0px;
 
+}
+.aboutUs {
+  background-image: linear-gradient(to top, #8cc486, #406e3c);
+  opacity: o.5 ;
+  width: 75%;
+  height: 400px;
+  overflow: auto;
+margin-left: auto;
+margin-right: auto;
+color: white;
+text-align: left;
+padding: 15px;
+
+
+}
+.savingMoney{
+  background-image: linear-gradient(to top, #dbb070c7, #e69a29c7);
+  opacity: 2;
+width: 75%;
+height: 400px;
+overflow: auto;
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+padding: 15px;
+color: white;
+}
+.whySave{
+  background-image: linear-gradient(to top, #8cc486, #406e3c);
+opacity: 2;
+width: 75%;
+height: 400px;
+overflow: auto;
+margin-left: auto;
+margin-right: auto; 
+color: white;
+text-align: left;
+padding: 15px;
+
+}
+.allP {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 15px;
+  height: 435px;
+  opacity: inherit;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.h1 {
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+  color: #4CAF50;
+  /* background-color: #020202f1;
+  opacity: 0.5;
+  text-align: center; */
+}
+
+.h2 {
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid orange;
+  color: orange;
+}
+
+.h3{
+   top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+  color: #4CAF50;
+}
+
+.beforBook {
+  width: 100%;
+  height: 15px;
+ background-color: #5a8a55;
+ opacity: 0.3;
+
+}
+
+.books{
+  width: 100%;
+  height: 400px;
+  background-color: #dd912088;
+  opacity: 0.5;
+  
+}
+
+footer{
+  background-image: linear-gradient(to top, #5a8a55, #2c5029);  width: 100%;
+  height: 50px;
+  padding-top: 10px;
 }
 
 /* 

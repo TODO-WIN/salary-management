@@ -54,12 +54,17 @@ function addExpenses(event) {
     //console.log(type, amount);
     new Salary(type, amount,time,date);
     localStorage.setItem('salaryAll', JSON.stringify(Salary.all));
-    tableRender();
+    if (balance != expenses) {
+        tableRender();
+    }
     expenses += amount;
     //console.log("exp=" + expenses);
     localStorage.setItem('exp', JSON.stringify(expenses));
     render();
-    tableRender();
+//   if (balance != expenses) {
+//         tableRender();
+//     }
+tableRender();
 
 }
 
@@ -84,10 +89,40 @@ function tableRender() {
             const tdTime = document.createElement('td');
             tRow.appendChild(tdTime);
             tdTime.textContent = data[i].time;
+            const tdDelete = document.createElement('td');
+            tRow.appendChild(tdDelete);
+            const button = document.createElement('button');
+            tdDelete.appendChild(button);
+            button.textContent = 'X';
+            button.setAttribute('id', data[i].name);
+            //button.addEventListener('click', removeColumn);
+
 
         }
     }
 }
+
+
+// function removeColumn(eve)
+// {
+//     document.getElementById(Salary.all.name).deleteRow(0);
+
+// }
+// Salary.removeItem = function(name) {
+//     this.name.splice(name, 1);
+
+//   };
+// function removeColumn(event) {
+//     var itemToRemove = event.target.id;
+//     console.log(itemToRemove);
+//     for (var i = 0; i < Salary.all.length; i++)
+//     {
+//       if (Salary.all[i].name === itemToRemove)
+//       {
+//         Salary.removeItem(Salary.all[i].name);
+//       }
+//     }
+// }
 render();
 tableRender();
 addSalary.addEventListener('click', addBalance);

@@ -2,36 +2,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 body {
 width: 100%;
-height: 100%;
-margin-left:auto ;
-margin-right: auto;
+margin: auto;
 text-align: center;
-background-image: url("");
+
 position: absolute;
 background-size:100% ;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position:center ;
 display: grid;
-background-color: rgb(245, 213, 110);
-opacity: 2;
-
-
 }
 
-.headSection {
+
+header{
+  width: 100%;
   display: grid;
-  grid-template-columns: 80px 300px 800px ;
-  background-color: #64c251;
+
+  grid-template-columns: 80px 300px 1fr;
+  /* align-items: center; */
+  background-color: 	#244c3c;
+
   padding: 20px;
-  height: 80px;
+  height: 90px;
   padding: 0%;
-  opacity: 2;
-  
-  
+  position: sticky;
+  padding: top -100px;
+  gap: 10px;
 }
 table{
   border-collapse: collapse;
@@ -47,10 +47,34 @@ tr , td{
 
 margin-top: 0%;
 padding-bottom: 40px;
+margin-left: 10px;
+}
+header ul{
+ 
+  list-style-type: none;
+  text-align:center;
 }
 
+ li {
+   margin-right: 20px;
+  float:right
+  
+} 
+li a {
+  display: block;
+  padding: 8px;
+  font-family: 'Roboto Condensed', sans-serif;  text-decoration: none;
+  color: white;
+
+
+}
+li a:hover {
+  background-color: rgb(250,110,6);
+}
+
+
 .projectName {
-  font-size: 19px;
+  font-size: 17px;
   padding-top: 0px;
   margin-right: 50px;
   font-family: 'Josefin Sans', sans-serif; text-align:left;
@@ -58,82 +82,104 @@ padding-bottom: 40px;
  margin-top: 40px;
 } 
 
-.nav {
-padding-top: 10px;
-line-height: 15px;
-text-decoration: none;
-font-size: 18px; 
-line-height: 25px;
-border-radius: 4px;
-font-weight: bold;
-text-align:center;
-height: 60px;
-width: 600px;
-margin-left: 500px;
-align-items:center;
-
-
-
-
-}
-
-ul {
-  list-style-type: none;
-  overflow: hidden;
-  text-align:center;
-
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  padding: 8px;
-  font-family: 'New Tegomin', serif;
-  text-decoration: none;
-  color: white;
-
-
-}
-
-li a:hover {
-  background-color: rgb(218, 200, 150);
-}
 
 .hero {
   width: 100%;
-  height: 600px;
+  height: 550px;
   padding: 0%;
   background-color: wheat;
-
+  padding-top: 0px;
 }
+
+
 .aboutUs {
-  background-color: lightblue;
+  background-image: linear-gradient(to top, rgb(82,108,91), rgb(220,220,187));
+  opacity: o.5 ;
   width: 75%;
-  height: 120px;
+  height: 400px;
   overflow: auto;
 margin-left: auto;
 margin-right: auto;
+color: white;
+text-align: left;
+padding: 15px;
 }
+
+
 .savingMoney{
-background-color: rgb(223, 201, 106);
+  background-image: linear-gradient(to top, rgb(82,108,91), rgb(220,220,187));
+  opacity: 2;
 width: 75%;
-height: 120px;
+height: 400px;
 overflow: auto;
 margin-left: auto;
 margin-right: auto;
+text-align: left;
+padding: 15px;
+color: white;
 }
 .whySave{
-background-color: rgb(173, 230, 206);
+  background-image: linear-gradient(to top, rgb(82,108,91), rgb(220,220,187));
+opacity: 2;
 width: 75%;
-height: 120px;
+height: 400px;
 overflow: auto;
 margin-left: auto;
 margin-right: auto; 
+color: white;
+text-align: left;
+padding: 15px;
+
+}
+.allP {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 15px;
+  height: 435px;
+  opacity: inherit;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
+#aboutHead   {
+  top: 0;
+  padding: 5px;
+  color: rgb(66,94,106);
+}
+#topTenHead {
+  top: 0;
+  padding: 5px;
+  color: rgb(66,94,106);
+}
+#whySaveHead {
+  top: 0;
+  padding: 5px;
+  color: rgb(66,94,106);
+}
+
+
+
+.beforBook {
+  width: 100%;
+  height: 15px;
+ background-color: rgb(220,220,187);
+ opacity: 0.3;
+
+}
+
+.books{
+  width: 100%;
+  height: 400px;
+  background-color: #425E6A;
+  /* opacity: 0.5; */
+  
+}
+
+footer{
+  /* background-image: linear-gradient(to top, rgb(220,220,187), rgb(36,76,60));  width: 100%; */
+  background-color:rgb(220,220,187) ;
+  height: 50px;
+}
 
 /* 
 header {
@@ -219,49 +265,114 @@ border-radius: 45%;
 
 
 
+*/
+
 form {
-    margin: auto;
-    width: 50%;
-    font-family: 'New Tegomin', serif;
-    background-image: url("form.jpg");
-    color: white;
-    border-radius: 20px;
+  margin: auto;
+  width: 50%;
+  font-family: 'New Tegomin', serif;
+  background-color:lightgray;
+  color: white;
+  border-radius: 20px;
 }
-  
-  
-  input[type=number],
-  select {
-    height: 1.75em;
-    width: 100%;
-  }
-  
-  input[type=submit] {
-    float: right;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 1em;
-  }
-  
-  label span {
-    display: block;
-    padding-bottom: .25em;
-  }
 
-  .button {
-    background-color: rgb(110, 100, 6);
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
 
-  footer {
-    background-color: #ffdf6b;
+input[type=number],
+select {
+  height: 1.75em;
+  width: 100%;
+}
+
+input[type=submit] {
+  float: right;
+}
+
+label {
+  display: block;
+  margin-bottom: 1em;
+}
+
+label span {
+  display: block;
+  padding-bottom: .25em;
+}
+
+.button {
+  background-color: white;
+  border: none;
+  color: #61b15a;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 14px 40px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #61b15a;
+  color: white;
+}
+
+table, th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* table {
+  margin: 20px auto;
+
+}
+table tr th ,td:first-child{
+  background-color:#61b15a ;
+  color:white;
+  padding: 8px 10px;
+  /* box-shadow:
+  inset 0 0 50px #fff,      
+  inset 20px 0 80px #FEB062,   
+  inset -20px 0 80px #FEB062,  
+  inset 20px 0 300px #FEB062,  
+  inset -20px 0 300px #FEB062, 
+  0 0 50px #fff,            
+  -10px 0 80px #FEB062,        
+  10px 0 80px #FEB062;         
 } */
+
+/* table td{
+  padding: 8px 10px;
+  border-collapse: collapse;
+  border: 1px solid #FEB062;
+}
+table tfoot{
+
+  color:#fff;
+}  */
+
+div {
+  background-color: #61b15a;
+  color: white;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #61b15a;
+  font-family: 'Josefin Sans', sans-serif; text-align:left;
+ color: white;
+ text-align: center;
+
+} 
+

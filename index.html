@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organize Salary</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/signIn.css">
+</head>
+
+<body>
+    <header>
+        <h1>Organize Salary</h1>
+    </header>
+    <main>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form id=form-register>
+                    <h1>Create Account</h1>
+                    <span>use your email for registration</span>
+                    <input id="userName" type="text" placeholder="UserName" required />
+                    <input id="email" type="email" placeholder="Email" required />
+                    <input id="pass" type="password" placeholder="Password" required />
+
+                    <button id="signup-submit" class="su">Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form id="form-signin" action="#">
+                    <h1>Sign In</h1>
+                    <span>use your account</span>
+                    <input id="signinEmail" type="email" placeholder="Email" required />
+                    <input id="signinPass" type="password" placeholder="Password" required />
+                    <button id="submit-signin" class="si">Sign In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>To Keep connected with us please login with your personal info</p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, Wanderer!</h1>
+                        <p>Enter your personal details and start journey with us</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <nav>
+
+            <span>All rights reserved &copy; 2021</span>
+        </nav>
+    </footer>
+    <script src="./js/signIn.js"></script>
+</body>
+
+</html>

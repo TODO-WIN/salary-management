@@ -13,6 +13,7 @@ Salary.all = [];
 
 let data = JSON.parse(localStorage.getItem('salaryAll'));
 if (data){
+    Salary.all=data;
 var res = data.reduce((acc, obj) => {
     var existObj = acc.find(item => item.date === obj.date);
     if (existObj) {
@@ -24,3 +25,4 @@ var res = data.reduce((acc, obj) => {
 }, []);
 console.log(res);
 }
+

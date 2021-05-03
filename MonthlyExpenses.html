@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="reset" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style3page.css">
 </head>
+
 <body>
     <header>
         <section class="headSection">
@@ -27,13 +29,49 @@
     </header>
     <main>
         <section>
-            <table class="month" style="background: burlywood; border: 2px solid black;" id='may'></table>
-            
-           
+            <form>
+                <label for="saving">Add Saving</label><br>
+                <input type="text" id="saving" name="saving"><br>
+                <button id='buttonSaving'>Add</button>
 
-            <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
+                <label for="goal">Add Goal</label><br>
+                <input type="text" id='goal' name="goal"><br>
+                <button id='buttonGoal'>Add</button>
+            </form>
+            <canvas id="myChart" width="400" height="400"></canvas>
         </section>
-     
+        <div id="shawSaving" style="background: burlywood;"></div>
+        <section>
+            <table>
+                <tr>
+
+
+                    <td> <button id='jan'>JANUARY</button></td>
+                    <td><button id='feb'>FEBRUARY</button></td>
+                    <td><button id='mar'>MARCH</button></td>
+                    <td> <button id='apr'>APRIL</button> </td>
+                </tr>
+                <tr>
+                    <td> <button id="may">MAY</button></td>
+                    <td> <button id='jun'>JUNE</button> </td>
+                    <td> <button id='jul'>JULY</button> </td>
+                    <td> <button id='aug'>AUGUST</button> </td>
+                </tr>
+                <tr>
+                    <td><button id='sep'>SEPTEMMBER</button> </td>
+                    <td> <button id='oct'>OCTOBER</button> </td>
+                    <td> <button id='nov'>NOVEMBER</button> </td>
+                    <td> <button id='dec'>DECEMBER</button> </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <table class="month" style="background: burlywood; border: 2px solid black;" id='mayT'></table>
+            <table class="month" style="background: burlywood; border: 2px solid black;" id='junT'></table>
+            <table class="month" style="background: burlywood; border: 2px solid black;" id='julT'></table>
+
+        </section>
+
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.0/dist/chart.min.js"></script>
@@ -43,4 +81,8 @@
 </footer>
 <script src="./js/app.js"></script>
 <script src="./js/monthly.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.0/dist/chart.min.js"></script>
+
+
 </html>

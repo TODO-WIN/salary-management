@@ -52,7 +52,7 @@ function addExpenses(event) {
     let date = document.getElementById('date').value;
     let time = document.getElementById('time').value;
     //console.log(type, amount);
-    new Salary(type, amount,time,date);
+    new Salary(type, amount, time, date);
     localStorage.setItem('salaryAll', JSON.stringify(Salary.all));
     if (balance != expenses) {
         tableRender();
@@ -61,10 +61,10 @@ function addExpenses(event) {
     //console.log("exp=" + expenses);
     localStorage.setItem('exp', JSON.stringify(expenses));
     render();
-//   if (balance != expenses) {
-//         tableRender();
-//     }
-tableRender();
+    //   if (balance != expenses) {
+    //         tableRender();
+    //     }
+    tableRender();
 
 }
 
@@ -95,34 +95,32 @@ function tableRender() {
             tdDelete.appendChild(button);
             button.textContent = 'X';
             button.setAttribute('id', data[i].name);
-            //button.addEventListener('click', removeColumn);
+            button.addEventListener('click', removeRow);
 
 
         }
     }
 }
 
+function removeRow(event) {
+  
 
-// function removeColumn(eve)
-// {
-//     document.getElementById(Salary.all.name).deleteRow(0);
-
-// }
-// Salary.removeItem = function(name) {
-//     this.name.splice(name, 1);
-
-//   };
-// function removeColumn(event) {
-//     var itemToRemove = event.target.id;
-//     console.log(itemToRemove);
-//     for (var i = 0; i < Salary.all.length; i++)
-//     {
-//       if (Salary.all[i].name === itemToRemove)
-//       {
-//         Salary.removeItem(Salary.all[i].name);
-//       }
-//     }
-// }
+    let data = JSON.parse(localStorage.getItem('salaryAll'));
+    var itemToRemove = event.target.id;
+    for (var i = 0; i < data.length; i++) {
+        if (data[i].name === itemToRemove) {
+            expenses=expenses-data[i].amount;
+            console.log(expenses);
+            tbody.deleteRow(i);
+            data.splice(i, 1);
+            localStorage.setItem('salaryAll', JSON.stringify(data));
+            
+        }
+        
+    }
+    localStorage.setItem('exp', JSON.stringify(expenses));
+    render();
+}
 render();
 tableRender();
 addSalary.addEventListener('click', addBalance);

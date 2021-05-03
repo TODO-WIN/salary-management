@@ -1,3 +1,4 @@
+
 function Salary(name, amount, time, date) {
     this.name = name;
     this.amount = amount;
@@ -5,9 +6,11 @@ function Salary(name, amount, time, date) {
     this.date = date;
 
     Salary.all.push(this);
+
 }
 
 Salary.all = [];
+
 let data = JSON.parse(localStorage.getItem('salaryAll'));
 if (data){
     Salary.all=data;

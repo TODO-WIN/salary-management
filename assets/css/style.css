@@ -1023,7 +1023,7 @@ hr {
 
 .our-team .row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -1044,6 +1044,7 @@ hr {
 
 .our-team .our-team-text p {
   color: #4FBA6F;
+  font-weight: bold;
 }
 
 /*--- case-studies ---*/
@@ -1339,7 +1340,7 @@ footer {
 
 footer .row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   align-items: center;
 }
@@ -1366,6 +1367,7 @@ footer .weight h4 {
   font-size: 28px;
   font-weight: 400;
   margin-bottom: 30px;
+
   letter-spacing: -1px;
 }
 

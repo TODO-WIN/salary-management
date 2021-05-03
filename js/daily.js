@@ -47,6 +47,7 @@ function render() {
 
 function addExpenses(event) {
 
+
     event.preventDefault();
     let type = document.getElementById('type').value;
     let amount = parseInt(document.getElementById('amount').value);
@@ -70,6 +71,7 @@ function addExpenses(event) {
 }
 
 function tableRender() {
+
 
 
     let date = new Date();
@@ -103,12 +105,15 @@ function tableRender() {
 
         }
 
+
     }
+
   }
 }
 
 function removeRow(event) {
   
+
 
     let data = JSON.parse(localStorage.getItem('salaryAll'));
     var itemToRemove = event.target.id;
@@ -126,6 +131,7 @@ function removeRow(event) {
     localStorage.setItem('exp', JSON.stringify(expenses));
     render();
 }
+
 render();
 tableRender();
 addSalary.addEventListener('click', addBalance);

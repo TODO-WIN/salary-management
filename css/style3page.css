@@ -24,21 +24,16 @@ header{
 
   grid-template-columns: 80px 300px 1fr;
   /* align-items: center; */
-  background-color: 	#244c3c;
+  background-color: 	#331900;
 
   padding: 20px;
   height: 90px;
   padding: 0%;
   position: sticky;
-  padding: top -100px;
+  padding: top 100px;
   gap: 10px;
 }
-table{
-  border-collapse: collapse;
-}
-tr , td{
-  border:2px black;
-}
+
 .logo {
   width: 80px;
   height: 80px;
@@ -269,10 +264,10 @@ border-radius: 45%;
 
 form {
   margin: auto;
-  width: 50%;
+  width: 80%;
   font-family: 'New Tegomin', serif;
-  background-color:lightgray;
-  color: white;
+  /* background-color:lightgray;
+  color: white; */
   border-radius: 20px;
 }
 
@@ -298,9 +293,9 @@ label span {
 }
 
 .button {
-  background-color: white;
+  /* background-color: white;
   border: none;
-  color: #61b15a;
+  color: #b3c2b2; */
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -314,8 +309,13 @@ label span {
 table {
   border-collapse: collapse;
   width: 100%;
-  background-color: #61b15a;
-  color: white;
+  background-color: #f5deb35b;
+
+   
+/* text-shadow:5px 2px 8px rgb(119, 112, 112); */
+
+color: rgb(3, 3, 3);
+font-size: 20px;
 }
 
 table, th, td {
@@ -354,8 +354,8 @@ table tfoot{
 }  */
 
 div {
-  background-color: #61b15a;
-  color: white;
+  /* background-color: #bbbbbb;
+  color: white; */
 }
 
 input[type=text], select {
@@ -363,16 +363,62 @@ input[type=text], select {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid;
   border-radius: 4px;
   box-sizing: border-box;
 }
 
 footer {
-  background-color: #61b15a;
+  background-color: #bd020283;
   font-family: 'Josefin Sans', sans-serif; text-align:left;
  color: white;
  text-align: center;
 
 } 
 
+#divi2{
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+}
+
+
+#formlb{
+display:grid;
+grid-template-columns: repeat(4,1fr);
+
+align-items: center;
+
+}
+
+#back{
+
+  background-color: #f5deb342;
+
+}
+
+
+
+#maindayle{
+  
+  background-image: url("saving-money-hand-putting-coins-jar-glass-business-strategy-symbols-save-investment-money-saving-money-hand-141008952.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+
+#card{
+
+display: grid;
+grid-template-columns: repeat(3,1fr);
+/* //اللون الي فوق الفورم */
+background-color: #bd0202b5;
+padding: 10px;
+ 
+text-shadow:2px 2px 8px rgb(119, 112, 112);
+
+color: rgb(255, 255, 255);
+font-size: 20px;
+}

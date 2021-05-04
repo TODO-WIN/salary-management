@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from zcube.in/ficube/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 May 2021 10:40:12 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manthly Expenses</title>
+    <!-- ficon 
+	============================================ -->
+    <!-- Style CSS
+	============================================ -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style3page.css">
+</head>
+
+<body>
+    <!--  Preloader  -->
+    <!-- <div id="preloader">
+		<div id="loading"> </div>
+	</div> -->
+    <header>
+
+        <!-- nav -->
+        <div id="mainNav" class="navbar navbar-fixed-top affix-top">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-inverse navbar-default">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href=“#”><img src="img/thelogo.jpg" alt="logo"
+                                    style="width: 70px;height: 70px;"></a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1"
+                            data-hover="dropdown" data-animations="fadeIn fadeInLeft fadeInUp fadeInRight">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="DailyExpenses.html">Daily Expenses</a>
+                                </li>
+                                <li>
+                                    <a href="MonthlyExpenses.html">Monthly Expenses </a>
+                                </li>
+                                <li>
+                                    <a href="about.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                            <!-- /.navbar-collapse -->
+                        </div>
+
+                    </nav>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- /nav -->
+        <!-- main header -->
+        <div class="main-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="main-header-text">
+                            <h3 class="wow fadeIn animated" data-wow-duration=".5s" data-wow-delay=".2s">Your financial
+                                solutions</h3>
+                            <h1 class="wow fadeIn" data-wow-duration=".2s" data-wow-delay=".1s">
+                                Monthly Expenses
+                            </h1>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /main header -->
+    </header>
+    <main id="main">
+        <section class="secMain">
+          
+            <section class="secTable">
+                <table>
+
+                    <tr>
+                        <td> <button id="may">MAY</button></td>
+                        <td> <button id='jun'>JUNE</button> </td>
+                        <td> <button id='jul'>JULY</button> </td>
+
+                    </tr>
+                </table>
+            </section>
+
+
+            <section id="conTable">
+                <table class="month" id='mayT'></table>
+                <table class="month" id='junT'></table>
+                <table class="month" id='julT'></table>
+
+            </section>
+        </section>
+<section id="chart">
+    <section>
+        <form>
+            <label for="saving">Add Saving</label><br>
+            <input type="text" id="saving" name="saving"><br>
+            <button id='buttonSaving'>Add</button><br>
+            <label for="goal">Add Goal</label><br>
+            <input type="text" id='goal' name="goal"><br>
+            <button id='buttonGoal'>Add</button>
+        </form>
+
+    </section>
+    <div id="shawSaving"></div>
+    <canvas id="myChart" width="400" height="400"></canvas>
+
+</section>
+            
+           
+
+       
+
+
+
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.0/dist/chart.min.js"></script>
+</body>
+<footer class="fadeIn animated" data-wow-duration=".3s" data-wow-delay=".2s">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-lg-3">                         
+                <div class="weight">
+                        <h4><img src="img/thelogo.jpg" alt="logo" style="width:100px;height: 100px;padding-top: 0px;"></h4>
+                        <p>salary Mangment -  Before you can even dream about saving money, you have to know where your money is  going.<br>
+                            can anyone decide where to make cuts in spending or where to find extra cash to save if they</p>                            
+                    </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">                                 
+                <div class="weight">
+                        <h4>Quick Links</h4>
+                        <ul class="w50">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="DailyExpenses.html">Daily Expenses</a></li>
+                            <li><a href="MonthlyExpenses1.html">Monthly Expenses</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contacts</a></li>
+                        </ul>   
+                    </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">                             
+                <div class="weight">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i> <span>1010 Jordan , Amman  +96201 628 123 Salaymangmant@gmail.com</span></li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i> +962 1 123 4000</li>
+                            <li><i class="fa fa-envelope-o" aria-hidden="true"></i> Salaymangmant@gmail.com</li>
+                        </ul>               
+                    </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./js/app.js"></script>
+<script src="./js/monthly.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.0/dist/chart.min.js"></script>
+
+
+</html>

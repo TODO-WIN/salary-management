@@ -37,7 +37,7 @@
   border: 15px solid #28527a;
 }
 
-input {
+.dinput {
   width: 300px;
   align-items: center;
   gap: 15px;
@@ -72,9 +72,15 @@ height: 35px;
   align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-top: 30px;
+  border-collapse: collapse ;
+  margin-left: 70px;
+  margin-bottom: 30px;
+  color: white;
+  font-weight: 400;
 }
 
-table{
+/* table{
   margin-top: 30px;
   border-collapse: collapse ;
   margin-left: 70px;
@@ -83,7 +89,7 @@ table{
   font-weight: 400;
   
 
-}
+} */
 
 .tabelDaily tr:nth-child(odd){
   background-color:#8e9699;

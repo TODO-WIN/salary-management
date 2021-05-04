@@ -20,6 +20,128 @@
   top: 50%;
   width: 120px; } */
 
+  .theHero{
+    width: 500px;
+  }
+
+.tableSection {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: 500px 1fr ;
+  align-items: center;
+  border: 15px solid #28527a;
+}
+
+input {
+  width: 300px;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 5px;
+  background-color: rgb(212, 209, 212);
+  margin-left: 90px;
+  border: 2px solid white;
+  height: 25px;
+}
+.submitt{
+  margin-left: 90px;
+  width: 312px;
+  background-color: #28527a;
+color: rgb(212, 209, 212) ;
+height: 35px;
+
+
+}
+
+.button{
+  border: none;
+  background-color: white;
+  font-size: 25px;
+  color: #28527a;
+  font-weight: bold;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.tabelDaily {
+  width: 550px;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+table{
+  margin-top: 30px;
+  border-collapse: collapse ;
+  margin-left: 70px;
+  margin-bottom: 30px;
+  color: white;
+  font-weight: 400;
+  
+
+}
+
+.tabelDaily tr:nth-child(odd){
+  background-color:#8e9699;
+}
+
+tbody:nth-child(even){
+  background-color: #28527a;
+}
+th,td{
+  border: 1px solid white;
+  text-align: center;
+  padding: 5px;
+
+}
+
+th {
+  font-weight:500;
+  font-size: 20px;
+}
+.theform {
+align-items: center;
+padding-left: 40px;
+
+}
+
+.leftside{
+  display: grid;
+  grid-template-rows: 300px 1fr ;
+  
+}
+
+
+ .card {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   width: 500px;
+   /* padding: 2px; */
+   /* padding-left: 20px; */
+   /* border: 2px solid white; */
+   text-align: center;
+   margin-right: 25px;
+   margin-bottom: 25px;
+   font-size: 15px;
+   color: #28527a;
+   font-weight: bold;
+
+ }
+
+.input {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding-bottom: 20px;
+
+  
+}
+
+input{
+  color: #28527a;
+  font-weight:700;
+  padding: 5px;
+}
+
 #preloader {
   background: #fff none repeat scroll 0 0;
   bottom: 0;
@@ -98,11 +220,10 @@ hr {
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #fff;
-}
+  color: #28527a;}
 
 ::-moz-placeholder {
-  color: #fff;
+  color: #28527a;
 }
 
 /*--- navbar ---*/
@@ -256,6 +377,7 @@ hr {
   color: #091f4f;
   letter-spacing: -2px;
   line-height: 1;
+  background-color: wheat;opacity: 0.5;
 }
 
 .main-header-text a {
@@ -321,6 +443,7 @@ hr {
   color: #fff;
   letter-spacing: -2px;
   line-height: 72px;
+  margin-bottom: 200px;
 }
 
 .bdrcrums {
@@ -364,7 +487,7 @@ hr {
 }
 
 .contact-header {
-  background: rgba(0, 0, 0, 0) url("../images/contact-header.jpg") no-repeat scroll center 0/cover;
+  background: rgba(0, 0, 0, 0) url("../images/theHeroImg.jpg") no-repeat scroll center 0/cover;
   display: flex;
   justify-content: center;
   align-items: center;

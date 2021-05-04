@@ -206,21 +206,30 @@ function render() {
 
 function chartRender() {
   var ctx = document.getElementById('myChart').getContext('2d');
-  let total = JSON.parse(localStorage.getItem('saving'));
-  let gl = JSON.parse(localStorage.getItem('goal'));
-  gl = gl - total;
-  let p = total / gl;
+  let total = parseInt(JSON.parse(localStorage.getItem('saving')));
+  let gl = parseInt(JSON.parse(localStorage.getItem('goal')));
+  let p=0; 
   if (myChart != undefined) {
     myChart.destroy();
     myChart = undefined;
   }
+  if (total >= gl) {
+    p=gl;
+    gl = 0;
+  }
+  else {
+    gl = gl - total;
+   p  = total ;
+
+  }
+ 
   myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
       labels: ['Saving', 'Goal'],
       datasets: [{
         label: '# of Votes',
-        data: [saving, gl],
+        data: [p, gl],
         backgroundColor: [
           'rgba(36,76,60 ,0.2)',
           'rgba(250,110,6,0.2)',

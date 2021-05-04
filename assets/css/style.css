@@ -863,6 +863,8 @@ hr {
 .news .news-text ul {
   float: left;
   margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
 
 .news .news-text li {
@@ -870,6 +872,7 @@ hr {
   float: left;
   margin-right: 10px;
   text-transform: uppercase;
+  width: 50%;
 }
 
 .news .news-text li a {

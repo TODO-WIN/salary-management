@@ -21,7 +21,7 @@ function addBalance(event) {
 
 function render() {
   card.innerHTML = '';
-  let pTotal = document.createElement('p');
+  let pTotal = document.createElement('div');
   card.appendChild(pTotal);
   let total = JSON.parse(localStorage.getItem('salary'));
   if (total) {
@@ -32,11 +32,11 @@ function render() {
   if (saveExpense) {
     expenses = parseInt(saveExpense);
   }
-  let exp = document.createElement('p');
+  let exp = document.createElement('div');
   card.appendChild(exp);
   exp.textContent = `Expenses  ${expenses}`;
   //console.log(expenses);
-  let remain = document.createElement('p');
+  let remain = document.createElement('div');
   card.appendChild(remain);
   remaining = balance - expenses;
   remain.textContent = `Remaining  ${remaining}`;
@@ -112,21 +112,21 @@ function tableRender() {
 
 
 function removeRow(event) {
-  
+
 
 
   let data = JSON.parse(localStorage.getItem('salaryAll'));
   var itemToRemove = event.target.id;
   for (var i = 0; i < data.length; i++) {
     if (data[i].name === itemToRemove) {
-      expenses=expenses-data[i].amount;
+      expenses = expenses - data[i].amount;
       console.log(expenses);
       tbody.deleteRow(i);
       data.splice(i, 1);
       localStorage.setItem('salaryAll', JSON.stringify(data));
-            
+
     }
-        
+
   }
   localStorage.setItem('exp', JSON.stringify(expenses));
   render();

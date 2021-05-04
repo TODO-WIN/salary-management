@@ -27,11 +27,10 @@
 .tableSection {
   margin-top: 15px;
   margin-bottom: 15px;
-  background-color: #28527a;
   display: grid;
   grid-template-columns: 500px 1fr ;
   align-items: center;
-  border: 15px solid #51779b;
+  border: 15px solid #28527a;
 }
 
 input {
@@ -42,17 +41,27 @@ input {
   background-color: rgb(212, 209, 212);
   margin-left: 90px;
   border: 2px solid white;
+  height: 25px;
 }
 .submitt{
   margin-left: 90px;
+  width: 312px;
+  background-color: #28527a;
+color: rgb(212, 209, 212) ;
+height: 35px;
+
+
 }
 
 .button{
   border: none;
-  background-color: #28527a;
+  background-color: white;
   font-size: 25px;
-  color: white;
+  color: #28527a;
   font-weight: bold;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .tabelDaily {
   width: 550px;
@@ -62,15 +71,23 @@ input {
 }
 
 table{
-  margin-top: 15px;
+  margin-top: 30px;
   border-collapse: collapse ;
   margin-left: 70px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   color: white;
   font-weight: 400;
+  
 
 }
 
+.tabelDaily tr:nth-child(odd){
+  background-color:#8e9699;
+}
+
+tbody:nth-child(even){
+  background-color: #28527a;
+}
 th,td{
   border: 1px solid white;
   text-align: center;
@@ -78,6 +95,10 @@ th,td{
 
 }
 
+th {
+  font-weight:500;
+  font-size: 20px;
+}
 .theform {
 align-items: center;
 padding-left: 40px;
@@ -99,10 +120,10 @@ padding-left: 40px;
    /* padding-left: 20px; */
    /* border: 2px solid white; */
    text-align: center;
-   margin-right: 30px;
+   margin-right: 25px;
    margin-bottom: 25px;
    font-size: 15px;
-   color: white;
+   color: #28527a;
    font-weight: bold;
 
  }
@@ -111,11 +132,12 @@ padding-left: 40px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   padding-bottom: 20px;
+
   
 }
 
 input{
-  color: white;
+  color: #28527a;
   font-weight:700;
   padding: 5px;
 }
@@ -198,10 +220,10 @@ hr {
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: white;}
+  color: #28527a;}
 
 ::-moz-placeholder {
-  color: white;
+  color: #28527a;
 }
 
 /*--- navbar ---*/

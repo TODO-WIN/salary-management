@@ -1,9 +1,11 @@
-
+/* body {
+  background-color: #f0ebcc;
+} */
 
 #main{
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 700px 1fr;
   margin-top: 100px;
 }
 
@@ -16,15 +18,15 @@
 
 #chart {
   display: grid;
-  grid-template-rows: 1fr 200px 1fr;
+  grid-template-rows: 200px 100px 1fr  ;
   width: 50%;
   text-align: center;
   
 }
 
 button {
-  width: 150px;
-  height: 50px;
+  width: 160px;
+  height: 45px;
   margin: 10px 10px;
   background: #4FBA6F;
     border-radius: 3px;
@@ -38,7 +40,7 @@ button {
 
 .month {
   width: 100%;
-background-color: gray;
+background-color: #f0ebcc;
 color: black;
  
 }
@@ -51,6 +53,10 @@ color: black;
  
 }
 
+.month th {
+  font-weight: bold;
+}
+
 input {
   width: 100%;
   padding: 12px 20px;
@@ -61,7 +67,7 @@ input {
 .shawSaving {
   width: 100%;
   background-color: gray;
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 
@@ -81,3 +87,45 @@ input {
   
   border: solid black 2px;
 } */
+
+
+.sForm {
+  display: grid;
+  grid-template-rows:1fr 1fr ;
+  width: 400px;
+  padding: 15px;
+}
+
+input {
+ width: 160px;
+ height: 45px;
+ margin-right:150px ;
+  margin-left: 0%;
+
+ 
+}
+
+::-moz-placeholder {
+ 
+  color:rgb(80, 75, 75);
+}
+
+::-webkit-input-placeholder {
+  color:rgb(80, 75, 75);
+}
+
+.sec1 {
+  display: grid;
+  grid-template-columns: 200px 100px;
+  padding-bottom: 0%;
+}
+
+.sec2 {
+  display: grid;
+  grid-template-columns: 200px 100px;
+  /* padding-bottom: 0%; */
+  margin-top: -20px;
+  margin-bottom:-30px ;
+}
+
+

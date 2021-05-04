@@ -21,7 +21,7 @@ function addBalance(event) {
 
 function render() {
   card.innerHTML = '';
-  let pTotal = document.createElement('p');
+  let pTotal = document.createElement('div');
   card.appendChild(pTotal);
   let total = JSON.parse(localStorage.getItem('salary'));
   if (total) {
@@ -32,11 +32,11 @@ function render() {
   if (saveExpense) {
     expenses = parseInt(saveExpense);
   }
-  let exp = document.createElement('p');
+  let exp = document.createElement('div');
   card.appendChild(exp);
   exp.textContent = `Expenses  ${expenses}`;
   //console.log(expenses);
-  let remain = document.createElement('p');
+  let remain = document.createElement('div');
   card.appendChild(remain);
   remaining = balance - expenses;
   remain.textContent = `Remaining  ${remaining}`;

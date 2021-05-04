@@ -19,9 +19,9 @@
   position: absolute;
   top: 50%;
   width: 120px; } */
-  .font{
+  /* .font{
     font-weight: bold;
-  }
+  } */
 
 #preloader {
   background: #fff none repeat scroll 0 0;
@@ -1381,9 +1381,9 @@ footer {
   align-items: center;
   margin-top: 50px;
 }
-.font{
+/* .font{
   font-weight: bold;
-}
+} */
 
 footer .row {
   display: grid;

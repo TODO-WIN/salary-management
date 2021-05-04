@@ -19,7 +19,16 @@
   position: absolute;
   top: 50%;
   width: 120px; } */
+  /* .font{
+    font-weight: bold;
+  } */
 
+  .img{
+
+    height: 270px;
+    width: 260px;
+  }
+  
 #preloader {
   background: #fff none repeat scroll 0 0;
   bottom: 0;
@@ -877,6 +886,9 @@ hr {
   font-size: 14px;
   text-align: center;
 }
+
+
+
 
 .blog-deatils .blog-social.col-md-6>strong {
   margin-right: 15px;

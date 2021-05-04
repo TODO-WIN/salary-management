@@ -54,19 +54,23 @@ function addExpenses(event) {
   let date = document.getElementById('date').value;
   let time = document.getElementById('time').value;
   //console.log(type, amount);
-  new Salary(type, amount, time, date);
-  localStorage.setItem('salaryAll', JSON.stringify(Salary.all));
-  if (balance != expenses) {
+  
+  console.log(balance,expenses)
+  if (balance > amount) {
+      new Salary(type, amount, time, date);
+    localStorage.setItem('salaryAll', JSON.stringify(Salary.all));
+
     tableRender();
+     expenses += amount;
   }
-  expenses += amount;
+ 
   //console.log("exp=" + expenses);
   localStorage.setItem('exp', JSON.stringify(expenses));
   render();
-  //   if (balance != expenses) {
-  //         tableRender();
-  //     }
-  tableRender();
+    // if (balance  expenses) {
+    //       tableRender();
+    //   }
+  //tableRender();
 
 }
 

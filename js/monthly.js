@@ -18,18 +18,7 @@ let julArr = ['2021-07-01', '2021-07-02', '2021-07-03', '2021-07-04',
   '2021-07-17', '2021-07-18', '2021-07-19', '2021-07-20', '2021-07-21', '2021-07-22',
   '2021-07-23', '2021-07-24', '2021-07-25', '2021-07-26', '2021-07-27', '2021-07-28',
   '2021-07-29', '2021-07-30', '2021-07-30'];
-  let data = JSON.parse(localStorage.getItem('salaryAll'));
-  if (data){
-      Salary.all=data;
-  var res = data.reduce((acc, obj) => {
-      var existObj = acc.find(item => item.date === obj.date);
-      if (existObj) {
-          existObj.amount = (parseInt(existObj.amount) + parseInt(obj.amount)).toString();
-          return acc;
-      }
-      acc.push(obj);
-      return acc;
-  }, []);}
+
   console.log(res);
 let arr = res;
 let saving = 0;

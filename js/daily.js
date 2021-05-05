@@ -130,6 +130,6 @@ function removeRow(event) {
 }
 
 render();
-//tableRender();
+tableRender();
 addSalary.addEventListener('click', addBalance);
 submit.addEventListener('click', addExpenses);

@@ -66,11 +66,6 @@ function addExpenses(event) {
   //console.log("exp=" + expenses);
   localStorage.setItem('exp', JSON.stringify(expenses));
   render();
-  // if (balance  expenses) {
-  //       tableRender();
-  //   }
-  //tableRender();
-
 }
 
 function tableRender() {
@@ -116,26 +111,25 @@ function tableRender() {
 
 function removeRow(event) {
 
-
-
   let data = JSON.parse(localStorage.getItem('salaryAll'));
-  var itemToRemove = event.target.id;
-  for (var i = 0; i < data.length; i++) {
+  let itemToRemove = event.target.id;
+  for (let i = 0; i < data.length; i++) {
     if (data[i].name === itemToRemove) {
       expenses = expenses - data[i].amount;
       console.log(expenses);
       tbody.deleteRow(i);
       data.splice(i, 1);
-      localStorage.setItem('salaryAll', JSON.stringify(data));
-
+      Salary.all=data;
+      localStorage.setItem('salaryAll', JSON.stringify(Salary.all));
+      localStorage.setItem('exp', JSON.stringify(expenses));
     }
 
   }
-  localStorage.setItem('exp', JSON.stringify(expenses));
+
   render();
 }
 
 render();
-tableRender();
+//tableRender();
 addSalary.addEventListener('click', addBalance);
 submit.addEventListener('click', addExpenses);
